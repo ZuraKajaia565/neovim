@@ -200,8 +200,8 @@ return {
               configuration = {
                 runtimes = {
                   {
-                    name = 'JavaSE-23',
-                    path = '/usr/lib/jvm/java-23-openjdk', -- Update with the path to Java 17
+                    name = 'JavaSE-24',
+                    path = '/usr/lib/jvm/java-24-openjdk', -- Update with the path to Java 17
                   },
                 },
               },

@@ -42,8 +42,8 @@ return {
             configuration = {
               runtimes = {
                 {
-                  name = 'JavaSE-23',
-                  path = '/usr/lib/jvm/java-23-openjdk', -- Adjust to your JDK path
+                  name = 'JavaSE-24',
+                  path = '/usr/lib/jvm/java-24-openjdk', -- Adjust to your JDK path
                 },
               },
             },
