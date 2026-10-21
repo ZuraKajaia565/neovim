@@ -1,20 +1,17 @@
--- ~/.config/nvim/lua/plugins/none-ls.lua
-
 return {
-  {
-    'nvimtools/none-ls.nvim', -- replaced null-ls
-    dependencies = { 'nvim-lua/plenary.nvim' },
-    config = function()
-      local null_ls = require 'null-ls'
-
-      null_ls.setup {
-        sources = {
-          null_ls.builtins.diagnostics.cppcheck,
-          null_ls.builtins.formatting.clang_format,
-          null_ls.builtins.formatting.black,
-          null_ls.builtins.diagnostics.flake8,
-        },
-      }
-    end,
-  },
+	"nvimtools/none-ls.nvim", -- or 'jose-elias-alvarez/null-ls.nvim' if you prefer
+	dependencies = { "nvim-lua/plenary.nvim" },
+	config = function()
+		local nls = require("null-ls")
+		nls.setup({
+			sources = {
+				-- diagnostics
+				nls.builtins.diagnostics.flake8,
+				nls.builtins.diagnostics.cppcheck,
+				-- formatting
+				nls.builtins.formatting.black,
+				nls.builtins.formatting.clang_format,
+			},
+		})
+	end,
 }
