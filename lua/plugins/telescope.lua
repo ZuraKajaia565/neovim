@@ -10,6 +10,7 @@ return {
       'nvim-telescope/telescope-ui-select.nvim', -- UI select for Telescope
       'nvim-tree/nvim-web-devicons', -- Optional: for file icons
     },
+
     config = function()
       -- Load Telescope and its extensions
       local telescope = require 'telescope'
